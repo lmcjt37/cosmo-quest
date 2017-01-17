@@ -1,0 +1,876 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E00BDF111CF236D800BFF482 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00BDF101CF236D800BFF482 /* AppDelegate.swift */; };
+		E00BDF131CF236D800BFF482 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00BDF121CF236D800BFF482 /* ViewController.swift */; };
+		E00BDF181CF236D800BFF482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E00BDF171CF236D800BFF482 /* Assets.xcassets */; };
+		E00BDF1B1CF236D800BFF482 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E00BDF191CF236D800BFF482 /* LaunchScreen.storyboard */; };
+		E00BDF261CF236D800BFF482 /* AsteroidzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00BDF251CF236D800BFF482 /* AsteroidzTests.swift */; };
+		E00BDF311CF236D800BFF482 /* AsteroidzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00BDF301CF236D800BFF482 /* AsteroidzUITests.swift */; };
+		E00BDF361CF236D800BFF482 /* cosmoquest.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E00BDF351CF236D800BFF482 /* cosmoquest.app */; };
+		E00BDF3E1CF236D800BFF482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E00BDF3D1CF236D800BFF482 /* Assets.xcassets */; };
+		E00BDF451CF236D800BFF482 /* cosmoquest.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E00BDF441CF236D800BFF482 /* cosmoquest.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E00BDF4E1CF236D800BFF482 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00BDF4D1CF236D800BFF482 /* ExtensionDelegate.swift */; };
+		E00BDF501CF236D800BFF482 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00BDF4F1CF236D800BFF482 /* NotificationController.swift */; };
+		E00BDF521CF236D800BFF482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E00BDF511CF236D800BFF482 /* Assets.xcassets */; };
+		E00E157C1D4E96FF004D49C0 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E157B1D4E96FF004D49C0 /* WatchSessionManager.swift */; };
+		E00E157E1D4E9B86004D49C0 /* WatchSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00E157D1D4E9B86004D49C0 /* WatchSessionManager.swift */; };
+		E010FF5D1CF83B66006B3FB4 /* orbitron-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E010FF5B1CF83B65006B3FB4 /* orbitron-bold.otf */; };
+		E010FF5E1CF83B66006B3FB4 /* orbitron-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E010FF5B1CF83B65006B3FB4 /* orbitron-bold.otf */; };
+		E010FF5F1CF83B66006B3FB4 /* orbitron-bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E010FF5B1CF83B65006B3FB4 /* orbitron-bold.otf */; };
+		E010FF601CF83B66006B3FB4 /* orbitron-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E010FF5C1CF83B66006B3FB4 /* orbitron-medium.otf */; };
+		E010FF611CF83B66006B3FB4 /* orbitron-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E010FF5C1CF83B66006B3FB4 /* orbitron-medium.otf */; };
+		E010FF621CF83B66006B3FB4 /* orbitron-medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E010FF5C1CF83B66006B3FB4 /* orbitron-medium.otf */; };
+		E01515281D17CD9500CD7083 /* background.swift in Sources */ = {isa = PBXBuildFile; fileRef = E01515271D17CD9500CD7083 /* background.swift */; };
+		E015154C1D17D51000CD7083 /* background.sks in Resources */ = {isa = PBXBuildFile; fileRef = E015154B1D17D51000CD7083 /* background.sks */; };
+		E016FD801CFDDF5B00F6C026 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E016FD7F1CFDDF5B00F6C026 /* SettingsController.swift */; };
+		E016FD821CFE064700F6C026 /* ScoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E016FD811CFE064700F6C026 /* ScoreController.swift */; };
+		E06D05DC1D56469E00583ED2 /* StartInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D05DA1D56466400583ED2 /* StartInterfaceController.swift */; };
+		E06D05DE1D5646ED00583ED2 /* GameInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D05DD1D5646ED00583ED2 /* GameInterfaceController.swift */; };
+		E06D05E01D56471B00583ED2 /* GameOverInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06D05DF1D56471B00583ED2 /* GameOverInterfaceController.swift */; };
+		E06D05E31D564AC900583ED2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E06D05E11D564AC900583ED2 /* Main.storyboard */; };
+		E06D05E61D564BD700583ED2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E06D05E41D564BD700583ED2 /* Interface.storyboard */; };
+		E09DFA841D4805BB00DA8FE3 /* AboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09DFA831D4805BB00DA8FE3 /* AboutController.swift */; };
+		E0EDF0851D507B160097C5A8 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EDF0841D507B160097C5A8 /* StorageManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E00BDF221CF236D800BFF482 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E00BDF051CF236D800BFF482 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E00BDF0C1CF236D800BFF482;
+			remoteInfo = Asteroidz;
+		};
+		E00BDF2D1CF236D800BFF482 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E00BDF051CF236D800BFF482 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E00BDF0C1CF236D800BFF482;
+			remoteInfo = Asteroidz;
+		};
+		E00BDF371CF236D800BFF482 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E00BDF051CF236D800BFF482 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E00BDF341CF236D800BFF482;
+			remoteInfo = "Asteroidz WatchKit App";
+		};
+		E00BDF461CF236D800BFF482 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E00BDF051CF236D800BFF482 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E00BDF431CF236D800BFF482;
+			remoteInfo = "Asteroidz WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E00BDF591CF236D800BFF482 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E00BDF451CF236D800BFF482 /* cosmoquest.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00BDF5D1CF236D800BFF482 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E00BDF361CF236D800BFF482 /* cosmoquest.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E00BDF0D1CF236D800BFF482 /* cosmoquest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cosmoquest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E00BDF101CF236D800BFF482 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E00BDF121CF236D800BFF482 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E00BDF171CF236D800BFF482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E00BDF1A1CF236D800BFF482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E00BDF1C1CF236D800BFF482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E00BDF211CF236D800BFF482 /* cosmoquest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cosmoquest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E00BDF251CF236D800BFF482 /* AsteroidzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidzTests.swift; sourceTree = "<group>"; };
+		E00BDF271CF236D800BFF482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E00BDF2C1CF236D800BFF482 /* cosmoquest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cosmoquest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E00BDF301CF236D800BFF482 /* AsteroidzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidzUITests.swift; sourceTree = "<group>"; };
+		E00BDF321CF236D800BFF482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E00BDF351CF236D800BFF482 /* cosmoquest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cosmoquest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E00BDF3D1CF236D800BFF482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E00BDF3F1CF236D800BFF482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E00BDF441CF236D800BFF482 /* cosmoquest.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = cosmoquest.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E00BDF4A1CF236D800BFF482 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		E00BDF4D1CF236D800BFF482 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		E00BDF4F1CF236D800BFF482 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		E00BDF511CF236D800BFF482 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E00BDF531CF236D800BFF482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E00BDF7B1CF24C7D00BFF482 /* Asteroidz-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Asteroidz-Bridging-Header.h"; sourceTree = "<group>"; };
+		E00E157B1D4E96FF004D49C0 /* WatchSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
+		E00E157D1D4E9B86004D49C0 /* WatchSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionManager.swift; sourceTree = "<group>"; };
+		E010FF5B1CF83B65006B3FB4 /* orbitron-bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "orbitron-bold.otf"; path = "Fonts/Orbitron/orbitron-bold.otf"; sourceTree = "<group>"; };
+		E010FF5C1CF83B66006B3FB4 /* orbitron-medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "orbitron-medium.otf"; path = "Fonts/Orbitron/orbitron-medium.otf"; sourceTree = "<group>"; };
+		E01515271D17CD9500CD7083 /* background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = background.swift; sourceTree = "<group>"; };
+		E015154B1D17D51000CD7083 /* background.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = background.sks; sourceTree = "<group>"; };
+		E016FD7F1CFDDF5B00F6C026 /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		E016FD811CFE064700F6C026 /* ScoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreController.swift; sourceTree = "<group>"; };
+		E06D05DA1D56466400583ED2 /* StartInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartInterfaceController.swift; sourceTree = "<group>"; };
+		E06D05DD1D5646ED00583ED2 /* GameInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameInterfaceController.swift; sourceTree = "<group>"; };
+		E06D05DF1D56471B00583ED2 /* GameOverInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverInterfaceController.swift; sourceTree = "<group>"; };
+		E06D05E21D564AC900583ED2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E06D05E51D564BD700583ED2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		E09DFA831D4805BB00DA8FE3 /* AboutController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutController.swift; sourceTree = "<group>"; };
+		E0EDF0841D507B160097C5A8 /* StorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E00BDF0A1CF236D800BFF482 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00BDF1E1CF236D800BFF482 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00BDF291CF236D800BFF482 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00BDF411CF236D800BFF482 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E00BDF041CF236D800BFF482 = {
+			isa = PBXGroup;
+			children = (
+				E00BDF0F1CF236D800BFF482 /* Asteroidz */,
+				E00BDF391CF236D800BFF482 /* Asteroidz WatchKit App */,
+				E00BDF481CF236D800BFF482 /* Asteroidz WatchKit Extension */,
+				E00BDF2F1CF236D800BFF482 /* AsteroidzUITests */,
+				E00BDF241CF236D800BFF482 /* AsteroidzTests */,
+				E00BDF0E1CF236D800BFF482 /* Products */,
+				E010FF631CF83BC7006B3FB4 /* Fonts */,
+			);
+			sourceTree = "<group>";
+		};
+		E00BDF0E1CF236D800BFF482 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E00BDF0D1CF236D800BFF482 /* cosmoquest.app */,
+				E00BDF211CF236D800BFF482 /* cosmoquest.xctest */,
+				E00BDF2C1CF236D800BFF482 /* cosmoquest.xctest */,
+				E00BDF351CF236D800BFF482 /* cosmoquest.app */,
+				E00BDF441CF236D800BFF482 /* cosmoquest.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E00BDF0F1CF236D800BFF482 /* Asteroidz */ = {
+			isa = PBXGroup;
+			children = (
+				E00BDF101CF236D800BFF482 /* AppDelegate.swift */,
+				E00BDF121CF236D800BFF482 /* ViewController.swift */,
+				E016FD7F1CFDDF5B00F6C026 /* SettingsController.swift */,
+				E016FD811CFE064700F6C026 /* ScoreController.swift */,
+				E01515271D17CD9500CD7083 /* background.swift */,
+				E09DFA831D4805BB00DA8FE3 /* AboutController.swift */,
+				E00E157B1D4E96FF004D49C0 /* WatchSessionManager.swift */,
+				E015154B1D17D51000CD7083 /* background.sks */,
+				E06D05E11D564AC900583ED2 /* Main.storyboard */,
+				E00BDF191CF236D800BFF482 /* LaunchScreen.storyboard */,
+				E00BDF171CF236D800BFF482 /* Assets.xcassets */,
+				E00BDF1C1CF236D800BFF482 /* Info.plist */,
+			);
+			path = Asteroidz;
+			sourceTree = "<group>";
+		};
+		E00BDF241CF236D800BFF482 /* AsteroidzTests */ = {
+			isa = PBXGroup;
+			children = (
+				E00BDF251CF236D800BFF482 /* AsteroidzTests.swift */,
+				E00BDF271CF236D800BFF482 /* Info.plist */,
+			);
+			path = AsteroidzTests;
+			sourceTree = "<group>";
+		};
+		E00BDF2F1CF236D800BFF482 /* AsteroidzUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E00BDF301CF236D800BFF482 /* AsteroidzUITests.swift */,
+				E00BDF321CF236D800BFF482 /* Info.plist */,
+			);
+			path = AsteroidzUITests;
+			sourceTree = "<group>";
+		};
+		E00BDF391CF236D800BFF482 /* Asteroidz WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				E06D05E41D564BD700583ED2 /* Interface.storyboard */,
+				E00BDF3D1CF236D800BFF482 /* Assets.xcassets */,
+				E00BDF3F1CF236D800BFF482 /* Info.plist */,
+			);
+			path = "Asteroidz WatchKit App";
+			sourceTree = "<group>";
+		};
+		E00BDF481CF236D800BFF482 /* Asteroidz WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E06D05DA1D56466400583ED2 /* StartInterfaceController.swift */,
+				E06D05DD1D5646ED00583ED2 /* GameInterfaceController.swift */,
+				E06D05DF1D56471B00583ED2 /* GameOverInterfaceController.swift */,
+				E00BDF4D1CF236D800BFF482 /* ExtensionDelegate.swift */,
+				E00BDF4F1CF236D800BFF482 /* NotificationController.swift */,
+				E00E157D1D4E9B86004D49C0 /* WatchSessionManager.swift */,
+				E0EDF0841D507B160097C5A8 /* StorageManager.swift */,
+				E00BDF511CF236D800BFF482 /* Assets.xcassets */,
+				E00BDF531CF236D800BFF482 /* Info.plist */,
+				E00BDF7B1CF24C7D00BFF482 /* Asteroidz-Bridging-Header.h */,
+				E00BDF491CF236D800BFF482 /* Supporting Files */,
+			);
+			path = "Asteroidz WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		E00BDF491CF236D800BFF482 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E00BDF4A1CF236D800BFF482 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E010FF631CF83BC7006B3FB4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E010FF5B1CF83B65006B3FB4 /* orbitron-bold.otf */,
+				E010FF5C1CF83B66006B3FB4 /* orbitron-medium.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E00BDF0C1CF236D800BFF482 /* cosmoquest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E00BDF5E1CF236D800BFF482 /* Build configuration list for PBXNativeTarget "cosmoquest" */;
+			buildPhases = (
+				E00BDF091CF236D800BFF482 /* Sources */,
+				E00BDF0A1CF236D800BFF482 /* Frameworks */,
+				E00BDF0B1CF236D800BFF482 /* Resources */,
+				E00BDF5D1CF236D800BFF482 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E00BDF381CF236D800BFF482 /* PBXTargetDependency */,
+			);
+			name = cosmoquest;
+			productName = Asteroidz;
+			productReference = E00BDF0D1CF236D800BFF482 /* cosmoquest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E00BDF201CF236D800BFF482 /* cosmoquestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E00BDF611CF236D800BFF482 /* Build configuration list for PBXNativeTarget "cosmoquestTests" */;
+			buildPhases = (
+				E00BDF1D1CF236D800BFF482 /* Sources */,
+				E00BDF1E1CF236D800BFF482 /* Frameworks */,
+				E00BDF1F1CF236D800BFF482 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E00BDF231CF236D800BFF482 /* PBXTargetDependency */,
+			);
+			name = cosmoquestTests;
+			productName = AsteroidzTests;
+			productReference = E00BDF211CF236D800BFF482 /* cosmoquest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E00BDF2B1CF236D800BFF482 /* cosmoquestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E00BDF641CF236D800BFF482 /* Build configuration list for PBXNativeTarget "cosmoquestUITests" */;
+			buildPhases = (
+				E00BDF281CF236D800BFF482 /* Sources */,
+				E00BDF291CF236D800BFF482 /* Frameworks */,
+				E00BDF2A1CF236D800BFF482 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E00BDF2E1CF236D800BFF482 /* PBXTargetDependency */,
+			);
+			name = cosmoquestUITests;
+			productName = AsteroidzUITests;
+			productReference = E00BDF2C1CF236D800BFF482 /* cosmoquest.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E00BDF341CF236D800BFF482 /* cosmoquest WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E00BDF5A1CF236D800BFF482 /* Build configuration list for PBXNativeTarget "cosmoquest WatchKit App" */;
+			buildPhases = (
+				E00BDF331CF236D800BFF482 /* Resources */,
+				E00BDF591CF236D800BFF482 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E00BDF471CF236D800BFF482 /* PBXTargetDependency */,
+			);
+			name = "cosmoquest WatchKit App";
+			productName = "Asteroidz WatchKit App";
+			productReference = E00BDF351CF236D800BFF482 /* cosmoquest.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E00BDF431CF236D800BFF482 /* cosmoquest WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E00BDF561CF236D800BFF482 /* Build configuration list for PBXNativeTarget "cosmoquest WatchKit Extension" */;
+			buildPhases = (
+				E00BDF401CF236D800BFF482 /* Sources */,
+				E00BDF411CF236D800BFF482 /* Frameworks */,
+				E00BDF421CF236D800BFF482 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "cosmoquest WatchKit Extension";
+			productName = "Asteroidz WatchKit Extension";
+			productReference = E00BDF441CF236D800BFF482 /* cosmoquest.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E00BDF051CF236D800BFF482 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Luke Taylor";
+				TargetAttributes = {
+					E00BDF0C1CF236D800BFF482 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = CMGRVSSJN8;
+						LastSwiftMigration = 0820;
+					};
+					E00BDF201CF236D800BFF482 = {
+						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0820;
+						TestTargetID = E00BDF0C1CF236D800BFF482;
+					};
+					E00BDF2B1CF236D800BFF482 = {
+						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0820;
+						TestTargetID = E00BDF0C1CF236D800BFF482;
+					};
+					E00BDF341CF236D800BFF482 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = CMGRVSSJN8;
+						LastSwiftMigration = 0820;
+					};
+					E00BDF431CF236D800BFF482 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = CMGRVSSJN8;
+						LastSwiftMigration = 0820;
+					};
+				};
+			};
+			buildConfigurationList = E00BDF081CF236D800BFF482 /* Build configuration list for PBXProject "cosmoquest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E00BDF041CF236D800BFF482;
+			productRefGroup = E00BDF0E1CF236D800BFF482 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E00BDF0C1CF236D800BFF482 /* cosmoquest */,
+				E00BDF201CF236D800BFF482 /* cosmoquestTests */,
+				E00BDF2B1CF236D800BFF482 /* cosmoquestUITests */,
+				E00BDF341CF236D800BFF482 /* cosmoquest WatchKit App */,
+				E00BDF431CF236D800BFF482 /* cosmoquest WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E00BDF0B1CF236D800BFF482 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E015154C1D17D51000CD7083 /* background.sks in Resources */,
+				E010FF5D1CF83B66006B3FB4 /* orbitron-bold.otf in Resources */,
+				E010FF601CF83B66006B3FB4 /* orbitron-medium.otf in Resources */,
+				E06D05E31D564AC900583ED2 /* Main.storyboard in Resources */,
+				E00BDF1B1CF236D800BFF482 /* LaunchScreen.storyboard in Resources */,
+				E00BDF181CF236D800BFF482 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00BDF1F1CF236D800BFF482 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00BDF2A1CF236D800BFF482 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00BDF331CF236D800BFF482 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E010FF5E1CF83B66006B3FB4 /* orbitron-bold.otf in Resources */,
+				E00BDF3E1CF236D800BFF482 /* Assets.xcassets in Resources */,
+				E06D05E61D564BD700583ED2 /* Interface.storyboard in Resources */,
+				E010FF611CF83B66006B3FB4 /* orbitron-medium.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00BDF421CF236D800BFF482 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E00BDF521CF236D800BFF482 /* Assets.xcassets in Resources */,
+				E010FF621CF83B66006B3FB4 /* orbitron-medium.otf in Resources */,
+				E010FF5F1CF83B66006B3FB4 /* orbitron-bold.otf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E00BDF091CF236D800BFF482 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E00BDF131CF236D800BFF482 /* ViewController.swift in Sources */,
+				E016FD801CFDDF5B00F6C026 /* SettingsController.swift in Sources */,
+				E09DFA841D4805BB00DA8FE3 /* AboutController.swift in Sources */,
+				E016FD821CFE064700F6C026 /* ScoreController.swift in Sources */,
+				E00BDF111CF236D800BFF482 /* AppDelegate.swift in Sources */,
+				E01515281D17CD9500CD7083 /* background.swift in Sources */,
+				E00E157C1D4E96FF004D49C0 /* WatchSessionManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00BDF1D1CF236D800BFF482 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E00BDF261CF236D800BFF482 /* AsteroidzTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00BDF281CF236D800BFF482 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E00BDF311CF236D800BFF482 /* AsteroidzUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E00BDF401CF236D800BFF482 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E00E157E1D4E9B86004D49C0 /* WatchSessionManager.swift in Sources */,
+				E00BDF501CF236D800BFF482 /* NotificationController.swift in Sources */,
+				E0EDF0851D507B160097C5A8 /* StorageManager.swift in Sources */,
+				E06D05DC1D56469E00583ED2 /* StartInterfaceController.swift in Sources */,
+				E06D05E01D56471B00583ED2 /* GameOverInterfaceController.swift in Sources */,
+				E00BDF4E1CF236D800BFF482 /* ExtensionDelegate.swift in Sources */,
+				E06D05DE1D5646ED00583ED2 /* GameInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E00BDF231CF236D800BFF482 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E00BDF0C1CF236D800BFF482 /* cosmoquest */;
+			targetProxy = E00BDF221CF236D800BFF482 /* PBXContainerItemProxy */;
+		};
+		E00BDF2E1CF236D800BFF482 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E00BDF0C1CF236D800BFF482 /* cosmoquest */;
+			targetProxy = E00BDF2D1CF236D800BFF482 /* PBXContainerItemProxy */;
+		};
+		E00BDF381CF236D800BFF482 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E00BDF341CF236D800BFF482 /* cosmoquest WatchKit App */;
+			targetProxy = E00BDF371CF236D800BFF482 /* PBXContainerItemProxy */;
+		};
+		E00BDF471CF236D800BFF482 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E00BDF431CF236D800BFF482 /* cosmoquest WatchKit Extension */;
+			targetProxy = E00BDF461CF236D800BFF482 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E00BDF191CF236D800BFF482 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E00BDF1A1CF236D800BFF482 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E06D05E11D564AC900583ED2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E06D05E21D564AC900583ED2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E06D05E41D564BD700583ED2 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E06D05E51D564BD700583ED2 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E00BDF541CF236D800BFF482 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E00BDF551CF236D800BFF482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E00BDF571CF236D800BFF482 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Asteroidz WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luketaylor.cosmoquest.watchkitapp.watchkitextension;
+				PRODUCT_NAME = cosmoquest;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		E00BDF581CF236D800BFF482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Asteroidz WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luketaylor.cosmoquest.watchkitapp.watchkitextension;
+				PRODUCT_NAME = cosmoquest;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		E00BDF5B1CF236D800BFF482 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IBSC_MODULE = Asteroidz_WatchKit_Extension;
+				INFOPLIST_FILE = "Asteroidz WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luketaylor.cosmoquest.watchkitapp;
+				PRODUCT_NAME = cosmoquest;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		E00BDF5C1CF236D800BFF482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IBSC_MODULE = Asteroidz_WatchKit_Extension;
+				INFOPLIST_FILE = "Asteroidz WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luketaylor.cosmoquest.watchkitapp;
+				PRODUCT_NAME = cosmoquest;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		E00BDF5F1CF236D800BFF482 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Asteroidz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luketaylor.Asteroidz;
+				PRODUCT_NAME = cosmoquest;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E00BDF601CF236D800BFF482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Asteroidz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luketaylor.Asteroidz;
+				PRODUCT_NAME = cosmoquest;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E00BDF621CF236D800BFF482 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AsteroidzTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luketaylor.AsteroidzTests;
+				PRODUCT_NAME = cosmoquest;
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cosmoquest.app/cosmoquest";
+			};
+			name = Debug;
+		};
+		E00BDF631CF236D800BFF482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = AsteroidzTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luketaylor.AsteroidzTests;
+				PRODUCT_NAME = cosmoquest;
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/cosmoquest.app/cosmoquest";
+			};
+			name = Release;
+		};
+		E00BDF651CF236D800BFF482 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AsteroidzUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luketaylor.AsteroidzUITests;
+				PRODUCT_NAME = cosmoquest;
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Asteroidz;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E00BDF661CF236D800BFF482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = AsteroidzUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.luketaylor.AsteroidzUITests;
+				PRODUCT_NAME = cosmoquest;
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Asteroidz;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E00BDF081CF236D800BFF482 /* Build configuration list for PBXProject "cosmoquest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E00BDF541CF236D800BFF482 /* Debug */,
+				E00BDF551CF236D800BFF482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E00BDF561CF236D800BFF482 /* Build configuration list for PBXNativeTarget "cosmoquest WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E00BDF571CF236D800BFF482 /* Debug */,
+				E00BDF581CF236D800BFF482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E00BDF5A1CF236D800BFF482 /* Build configuration list for PBXNativeTarget "cosmoquest WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E00BDF5B1CF236D800BFF482 /* Debug */,
+				E00BDF5C1CF236D800BFF482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E00BDF5E1CF236D800BFF482 /* Build configuration list for PBXNativeTarget "cosmoquest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E00BDF5F1CF236D800BFF482 /* Debug */,
+				E00BDF601CF236D800BFF482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E00BDF611CF236D800BFF482 /* Build configuration list for PBXNativeTarget "cosmoquestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E00BDF621CF236D800BFF482 /* Debug */,
+				E00BDF631CF236D800BFF482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E00BDF641CF236D800BFF482 /* Build configuration list for PBXNativeTarget "cosmoquestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E00BDF651CF236D800BFF482 /* Debug */,
+				E00BDF661CF236D800BFF482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E00BDF051CF236D800BFF482 /* Project object */;
+}

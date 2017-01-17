@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="14F27" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="orbitron-bold.otf">
+            <string>Orbitron-Bold</string>
+            <string>Orbitron-Bold</string>
+            <string>Orbitron-Bold</string>
+            <string>Orbitron-Bold</string>
+            <string>Orbitron-Bold</string>
+        </mutableArray>
+        <mutableArray key="orbitron-medium.otf">
+            <string>Orbitron-Medium</string>
+            <string>Orbitron-Medium</string>
+            <string>Orbitron-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Start-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="Start" contentMode="scaleAspectFill" animationDuration="1" id="AgC-eL-Hgc" customClass="StartInterfaceController" customModule="cosmoquest">
+                    <items>
+                        <group width="1" height="1" alignment="center" layout="vertical" id="mId-YH-0zj">
+                            <items>
+                                <label width="0.90000000000000002" height="25" alignment="center" text="Cosmo Quest" textAlignment="center" id="49Q-g2-4HI" userLabel="Asteroidz">
+                                    <fontDescription key="font" name="Orbitron-Bold" family="Orbitron" pointSize="16"/>
+                                </label>
+                                <button alignment="center" verticalAlignment="center" id="TVE-aW-tAr" userLabel="Play">
+                                    <group key="contentGroup" width="77" height="77" alignment="left" layout="vertical" radius="39" id="3xM-LF-uCS" userLabel="asteroidBtn">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Play" id="ZhE-oK-dSu" userLabel="Play">
+                                                <fontDescription key="font" name="Orbitron-Medium" family="Orbitron" pointSize="20"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <action selector="openGame" destination="AgC-eL-Hgc" id="kBw-48-X3R"/>
+                                    </connections>
+                                </button>
+                                <button alignment="right" verticalAlignment="bottom" id="vIS-AO-xC8" userLabel="Help">
+                                    <group key="contentGroup" width="32" height="32" alignment="left" radius="16" id="wtT-dm-w22">
+                                        <items>
+                                            <group width="29" height="29" alignment="center" verticalAlignment="center" radius="15" id="WVj-Tf-yp7">
+                                                <items>
+                                                    <label width="1" height="0.90000000000000002" alignment="center" verticalAlignment="bottom" text="?" textAlignment="center" baselineAdjustment="alignCenters" id="7rD-mC-x7R">
+                                                        <fontDescription key="font" name="Orbitron-Bold" family="Orbitron" pointSize="16"/>
+                                                    </label>
+                                                </items>
+                                                <color key="backgroundColor" red="0.17254901959999999" green="0.24313725489999999" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </group>
+                                        </items>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <action selector="openHelp" destination="AgC-eL-Hgc" id="KXB-ip-eeH"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="asteroidBtn" destination="3xM-LF-uCS" id="E8M-tQ-5br"/>
+                        <outlet property="mainContainer" destination="mId-YH-0zj" id="tVb-S1-UKQ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="151" y="345"/>
+        </scene>
+        <!--Score: 0-->
+        <scene sceneID="Thv-rM-NO9">
+            <objects>
+                <controller identifier="Game" title="Score: 0" id="TgH-xo-XhH" customClass="GameInterfaceController" customModule="cosmoquest">
+                    <items>
+                        <group width="1" height="1" alignment="left" layout="vertical" id="X7v-SE-dlx" userLabel="background">
+                            <items>
+                                <group width="1" height="30" alignment="left" alpha="0.0" id="WIN-b1-6mP" userLabel="asteroids">
+                                    <items>
+                                        <group width="0.20000000000000001" height="30" alignment="left" verticalAlignment="bottom" alpha="0.0" id="PdT-Re-LiG" userLabel="asteroid1"/>
+                                        <group width="0.20000000000000001" height="30" alignment="left" verticalAlignment="bottom" alpha="0.0" id="Px8-AM-MXH" userLabel="asteroid2"/>
+                                        <group width="0.20000000000000001" height="30" alignment="left" verticalAlignment="bottom" id="vkr-Qi-wzg" userLabel="asteroid3"/>
+                                        <group width="0.20000000000000001" height="30" alignment="left" verticalAlignment="bottom" alpha="0.0" id="55B-4E-q5Z" userLabel="asteroid4"/>
+                                        <group width="0.20000000000000001" height="30" alignment="left" verticalAlignment="bottom" alpha="0.0" id="7Ue-Bk-zTv" userLabel="asteroid5"/>
+                                    </items>
+                                </group>
+                                <label alignment="center" verticalAlignment="center" id="O5I-AX-6gE">
+                                    <fontDescription key="font" name="Orbitron-Bold" family="Orbitron" pointSize="40"/>
+                                </label>
+                                <group width="1" height="48" alignment="center" verticalAlignment="bottom" alpha="0.0" id="Y85-qJ-uk4" userLabel="Ship">
+                                    <items>
+                                        <picker width="2" height="2" alignment="left" verticalAlignment="bottom" style="sequence" id="lgM-vw-nH8">
+                                            <connections>
+                                                <action selector="pickerAction:" destination="TgH-xo-XhH" id="YOa-bx-73A"/>
+                                            </connections>
+                                        </picker>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="asteroid1" destination="PdT-Re-LiG" id="YU8-lL-K6f"/>
+                        <outlet property="asteroid2" destination="Px8-AM-MXH" id="enR-uk-k0Q"/>
+                        <outlet property="asteroid3" destination="vkr-Qi-wzg" id="r0U-K3-iCw"/>
+                        <outlet property="asteroid4" destination="55B-4E-q5Z" id="Ogk-Yy-fje"/>
+                        <outlet property="asteroid5" destination="7Ue-Bk-zTv" id="W4p-Ly-lLd"/>
+                        <outlet property="asteroidGroup" destination="WIN-b1-6mP" id="XYK-1q-fCf"/>
+                        <outlet property="background" destination="X7v-SE-dlx" id="YCH-Jf-m1h"/>
+                        <outlet property="countdownLabel" destination="O5I-AX-6gE" id="fNL-uX-mUd"/>
+                        <outlet property="picker" destination="lgM-vw-nH8" id="Leo-L9-nV4"/>
+                        <outlet property="ship" destination="Y85-qJ-uk4" id="hnx-kE-1XU"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="339" y="345"/>
+        </scene>
+        <!--Back-->
+        <scene sceneID="Mup-Rj-WvA">
+            <objects>
+                <controller identifier="Help" title="Back" id="kmW-5E-xkX">
+                    <items>
+                        <label width="0.90000000000000002" height="25" alignment="center" text="How to play" id="mBH-HQ-eX6" userLabel="Title">
+                            <fontDescription key="font" name="Orbitron-Bold" family="Orbitron" pointSize="16"/>
+                        </label>
+                        <label width="0.90000000000000002" alignment="center" numberOfLines="0" id="7Ux-mU-IFP" userLabel="Description">
+                            <string key="text">Cosmo Quest is a simple game where you aim to evade oncoming asteroids whilst building a score for evading each one.
+
+Using the digital crown on the side of the watch, you control the ship by scrolling left and right. Asteroids will appear from the top of the screen in random positions to add difficulty to the game. The longer you survive, the faster the game gets.
+
+Try to achieve the highest score possible. 
+
+Good luck!</string>
+                            <fontDescription key="font" name="Orbitron-Medium" family="Orbitron" pointSize="15"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="529" y="569"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="151" y="587"/>
+        </scene>
+        <!--Game Over-->
+        <scene sceneID="Ufb-mu-Hhq">
+            <objects>
+                <controller identifier="Game Over" id="VFN-1x-Z7C" customClass="GameOverInterfaceController" customModule="cosmoquest">
+                    <items>
+                        <group width="1" height="1" alignment="left" layout="vertical" id="KAG-ro-ss1" userLabel="background">
+                            <items>
+                                <label alignment="center" text="Game Over" textAlignment="center" numberOfLines="2" id="85p-rw-ST5">
+                                    <fontDescription key="font" name="Orbitron-Bold" family="Orbitron" pointSize="40"/>
+                                </label>
+                                <group alignment="center" verticalAlignment="center" id="FLe-QP-26w">
+                                    <items>
+                                        <picker width="0.33000000000000002" height="40" alignment="left" focusStyle="stack" id="33l-nX-sle">
+                                            <connections>
+                                                <action selector="pickerOneAction:" destination="VFN-1x-Z7C" id="lrZ-0d-c26"/>
+                                            </connections>
+                                        </picker>
+                                        <picker width="0.34000000000000002" height="40" alignment="left" focusStyle="stack" id="Tku-7L-ovK">
+                                            <connections>
+                                                <action selector="pickerTwoAction:" destination="VFN-1x-Z7C" id="F8j-DV-WC7"/>
+                                            </connections>
+                                        </picker>
+                                        <picker width="0.33000000000000002" height="40" alignment="left" focusStyle="stack" id="Ajg-uP-pYU">
+                                            <connections>
+                                                <action selector="pickerThreeAction:" destination="VFN-1x-Z7C" id="Fc3-PI-fFr"/>
+                                            </connections>
+                                        </picker>
+                                    </items>
+                                </group>
+                                <button width="1" alignment="left" verticalAlignment="bottom" title="Home" id="kEJ-mo-tvs">
+                                    <fontDescription key="font" name="Orbitron-Medium" family="Orbitron" pointSize="15"/>
+                                    <connections>
+                                        <action selector="homeButton" destination="VFN-1x-Z7C" id="RmD-uZ-5uU"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="background" destination="KAG-ro-ss1" id="aFl-ZK-OTz"/>
+                        <outlet property="pickerOne" destination="33l-nX-sle" id="9Ut-SM-BJr"/>
+                        <outlet property="pickerThree" destination="Ajg-uP-pYU" id="OsJ-iZ-3SE"/>
+                        <outlet property="pickerTwo" destination="Tku-7L-ovK" id="DzX-Aa-0RG"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="151" y="830"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="cosmoquest"/>
+            </objects>
+            <point key="canvasLocation" x="339" y="587"/>
+        </scene>
+    </scenes>
+</document>
